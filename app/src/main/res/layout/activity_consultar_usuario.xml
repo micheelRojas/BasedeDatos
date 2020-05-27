@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultarUsuario"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="Consultar Usuario" />
+
+    <EditText
+        android:id="@+id/id_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="number"
+        android:padding="20dp" />
+    <Button
+        android:id="@+id/button_consultae_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar"
+        android:onClick="consultar"
+
+        android:gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/nombre_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="nombre"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/telefono_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="telefono"
+        android:padding="20dp"/>
+    <Button
+        android:id="@+id/button_modificar_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:onClick="moodificar"
+
+        android:gravity="center_horizontal"
+        />
+    <Button
+    android:id="@+id/button_eliminar_usuario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Eliminar"
+    android:onClick="eliminar"
+
+    android:gravity="center_horizontal"
+    />
+
+</LinearLayout>
